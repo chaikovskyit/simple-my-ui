@@ -1,0 +1,70 @@
+.viewport {
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	pointer-events: none;
+	z-index: 50;
+}
+
+.toast {
+	pointer-events: auto;
+	min-width: 280px;
+	max-width: 360px;
+	padding: 12px 14px;
+	border-radius: var(--radius);
+	background: var(--c-surface);
+	border: 1px solid var(--c-border);
+	box-shadow: var(--shadow);
+	transform: translateY(12px);
+	opacity: 0;
+	animation: in 220ms ease forwards;
+}
+
+@keyframes in {
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.title {
+	font-weight: 600;
+}
+
+.msg {
+	color: var(--c-muted);
+	margin-top: 4px;
+}
+
+.close {
+	border: none;
+	background: transparent;
+	color: var(--c-text);
+	cursor: pointer;
+}
+
+.info {
+	border-color: #7c5cff33;
+}
+
+.success {
+	border-color: #52d27344;
+}
+
+.warning {
+	border-color: #ffb84d44;
+}
+
+.error {
+	border-color: #ff5c7a55;
+}

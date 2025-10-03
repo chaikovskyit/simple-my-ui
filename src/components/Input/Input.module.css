@@ -1,0 +1,48 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+.label {
+	font-size: 12px;
+	color: var(--c-muted);
+}
+.field {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	background: var(--c-surface);
+	border: 1px solid var(--c-border);
+	border-radius: var(--radius);
+	padding: 10px 12px;
+	box-shadow: var(--shadow);
+}
+.input {
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--c-text);
+	width: 100%;
+	font-size: 14px;
+}
+.leftIcon {
+	opacity: 0.8;
+}
+.iconBtn {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	font-size: 14px;
+	opacity: 0.8;
+}
+.error {
+	border-color: var(--c-danger);
+}
+.help {
+	font-size: 12px;
+	color: var(--c-muted);
+}
+.helpError {
+	color: var(--c-danger);
+}

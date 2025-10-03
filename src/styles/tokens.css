@@ -1,0 +1,24 @@
+:root {
+	--radius: 10px;
+	--shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+	--c-bg: #ffffff;
+	--c-surface: #f8f9fa;
+	--c-border: #e0e0e0;
+	--c-text: #212121;
+	--c-muted: #666666;
+	--c-primary: #7c5cff;
+	--c-danger: #e53935;
+	--c-warn: #f9a825;
+	--c-success: #43a047;
+}
+
+* {
+	box-sizing: border-box;
+}
+html,
+body,
+#root {
+	height: 100%;
+	background: var(--c-bg);
+	color: var(--c-text);
+}
